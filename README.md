@@ -25,7 +25,6 @@ An intelligent tool that helps users find the cheapest egg prices in their city 
 - **Pydantic**: Data validation and settings management
 - **Pandas**: Data manipulation and analysis
 - **Asyncio**: Asynchronous I/O management
-- **dotenv**: Environment variable management
 
 ## ⚙️ Installation
 
@@ -55,7 +54,7 @@ An intelligent tool that helps users find the cheapest egg prices in their city 
 
 Run the Streamlit app:
 ```bash
-streamlit run app.py
+streamlit run egg-price-analyst.py
 ```
 
 This will launch the web interface in your default browser. From there:
@@ -67,27 +66,13 @@ This will launch the web interface in your default browser. From there:
 5. Explore the raw data on the "Price Data" tab
 6. Download the report or raw data as needed
 
-## 📋 Requirements
-
-Dependencies are listed in `requirements.txt`, but the major ones include:
-
-```
-streamlit>=1.30.0
-openai>=1.20.0
-pandas>=2.0.0
-pydantic>=2.0.0
-python-dotenv>=1.0.0
-```
-
 ## 🧩 Project Structure
 
 ```
-egg-price-researcher/
-├── app.py             # Main application file
-├── agents.py          # Agent definitions and tools
-├── requirements.txt   # Project dependencies
-├── .env               # Environment variables (not in repo)
-└── README.md          # This file
+egg-price-researcher/      # Main application file
+├── egg-price-analyst.py   # Agent definitions and tools
+├── requirements.txt       # Project dependencies
+└── README.md              # This file
 ```
 
 ## 🔒 Privacy & Usage Notes
